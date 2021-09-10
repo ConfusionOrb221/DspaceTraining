@@ -3,7 +3,9 @@ package org.dspace.app.rest.converter;
 import org.dspace.app.rest.model.AlbumRest;
 import org.dspace.app.rest.projection.Projection;
 import org.dspace.music.Album;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AlbumConverter implements DSpaceConverter<Album, AlbumRest>{
 
     @Override

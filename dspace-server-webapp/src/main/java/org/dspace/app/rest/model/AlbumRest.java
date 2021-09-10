@@ -2,15 +2,20 @@ package org.dspace.app.rest.model;
 
 
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
-import javax.persistence.Column;
+import org.dspace.music.Album;
 
+/**
+ * This class serves as a REST representation for the {@link Album} class
+ */
 import org.dspace.app.rest.RestResourceController;
+import org.dspace.scripts.Process;
 
 public class AlbumRest extends BaseObjectRest<UUID> {
 
-    public static final String CATEGORY = RestAddressableModel.SYSTEM;
+    public static final String CATEGORY = RestAddressableModel.MUSIC;
     public static final String NAME = "album";
     public static final String PLURAL_NAME = "albums";
 
